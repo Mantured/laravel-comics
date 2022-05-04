@@ -54,7 +54,7 @@
                 </nav>
             </div>
         </div>
-        <img src="../assets/images/dc-logo-bg.png" alt="logo dc" />
+        <img src="{{ asset('images/dc-logo-bg.png') }}" alt="logo dc" />
     </div>
     <div class="index-footer-bottom">
         <button>sign-up now!</button>
