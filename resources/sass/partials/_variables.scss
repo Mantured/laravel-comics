@@ -1,0 +1,13 @@
+
+//# centra il container
+@mixin centralizerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//# mi cambia la gestione del oggetto -contain, cover...-
+//# mixin con argomento, che definisco una volta che lo richiamo
+@mixin backgroundSize($value) {
+    background-size: $value ;
+}
