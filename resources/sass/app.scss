@@ -28,28 +28,27 @@ div.index-header {
     padding: 0.5rem;
     align-items: center;
     justify-content: space-around;
-}
-nav {
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-
-        li {
-            padding: 0 0.7rem;
-            list-style-type: none;
-            a {
-                color: black;
-                font-weight: 600;
-                text-decoration: none;
-                text-transform: uppercase;
+    nav {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            li {
+                padding: 0 0.7rem;
+                list-style-type: none;
+                a {
+                    color: black;
+                    font-weight: 600;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
             }
-        }
-        li:hover a,
-        li:active a,
-        .active {
-            padding-bottom: 5vh;
-            border-bottom: 4px solid blue;
+            li:hover a,
+            li:active a,
+            .active {
+                padding-bottom: 5vh;
+                border-bottom: 4px solid blue;
+            }
         }
     }
 }

@@ -29,27 +29,27 @@ div.index-header {
   justify-content: space-around;
 }
 
-nav ul {
+div.index-header nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-nav ul li {
+div.index-header nav ul li {
   padding: 0 0.7rem;
   list-style-type: none;
 }
 
-nav ul li a {
+div.index-header nav ul li a {
   color: black;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-nav ul li:hover a,
-nav ul li:active a,
-nav ul .active {
+div.index-header nav ul li:hover a,
+div.index-header nav ul li:active a,
+div.index-header nav ul .active {
   padding-bottom: 5vh;
   border-bottom: 4px solid blue;
 }
