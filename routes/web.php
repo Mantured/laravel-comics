@@ -18,5 +18,5 @@ Route::get('/', function () {
     $data = [
         "comics" => config('comics')
     ];
-    return view('guest.comics' , $data);
-}) -> name ('comics');
+    return view('home' , $data);
+}) -> name ('home');

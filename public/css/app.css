@@ -1,5 +1,4 @@
 /* RESET */
-
 * {
   margin: 0;
   padding: 0;
@@ -28,25 +27,21 @@ div.index-header {
   align-items: center;
   justify-content: space-around;
 }
-
 div.index-header nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 div.index-header nav ul li {
   padding: 0 0.7rem;
   list-style-type: none;
 }
-
 div.index-header nav ul li a {
   color: black;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
 }
-
 div.index-header nav ul li:hover a,
 div.index-header nav ul li:active a,
 div.index-header nav ul .active {
@@ -58,18 +53,15 @@ div.comic-card {
   width: 16.6666666667%;
   padding: 0.5rem;
 }
-
 div.comic-card a {
   text-decoration: none;
   color: white;
 }
-
 div.comic-card a img {
   width: 80%;
   height: 80%;
   margin-bottom: 1rem;
 }
-
 div.comic-card a h4 {
   text-transform: uppercase;
 }
@@ -87,7 +79,6 @@ div.index-main h4 {
   background-size: cover;
   position: relative;
 }
-
 #jumbotron .my-btn {
   position: absolute;
   top: 95%;
@@ -113,13 +104,11 @@ div.index-main-bottom {
   justify-content: space-around;
   background-color: rgb(2, 130, 249);
 }
-
 div.index-main-bottom ul li {
   display: inline;
   padding: 0 0.7rem;
   list-style-type: none;
 }
-
 div.index-main-bottom ul li img {
   width: 60px;
   height: 60px;
@@ -136,41 +125,34 @@ div.index-footer-top {
   justify-content: space-around;
   background-image: url("/images/footer-bg.jpg");
 }
-
 div.index-footer-top div.nav-wrapper {
   padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-
 div.index-footer-top div.nav-wrapper div {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
-
 div.index-footer-top div.nav-wrapper div h4 {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
-
 div.index-footer-top div.nav-wrapper div nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 div.index-footer-top div.nav-wrapper div nav ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 div.index-footer-top div.nav-wrapper div nav ul li {
   padding: 0;
 }
-
 div.index-footer-top img {
   scale: 1.2;
 }
@@ -184,7 +166,6 @@ div.index-footer-bottom {
   justify-content: space-around;
   background-color: rgb(48, 48, 48);
 }
-
 div.index-footer-bottom button {
   color: white;
   padding: 0.5rem;
@@ -193,13 +174,11 @@ div.index-footer-bottom button {
   background-color: transparent;
   border: 2px solid rgb(2, 130, 249);
 }
-
 div.index-footer-bottom div.social-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
 div.index-footer-bottom div.social-wrapper a {
   font-weight: 800;
   margin-right: 1rem;
@@ -207,4 +186,3 @@ div.index-footer-bottom div.social-wrapper a {
   color: rgb(2, 130, 249);
   text-transform: uppercase;
 }
-

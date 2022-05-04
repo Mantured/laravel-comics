@@ -1,15 +1,59 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel Comics</title>
+@section('title', 'Home')
 
-        {{-- qui ci metto le CDN se non le installo con npm --}}
+{{-- @section('heder-content')
+@endsection --}}
+@section( 'main-content')
 
-    </head>
-    <body>
+<div class="index-main">
+    <div id="jumbotron">
+        <button class="my-btn">Current Series</button>
+    </div>
 
-    </body>
-</html>
+    <div class="index-main-top">
+        @foreach ( $comics as $comic )
+            <div class="comic-card">
+                <img src="{{ $comic['thumb']}}" alt="{{ $comic['title']}}">
+                <h4> {{$comic['title']}}</h4>
+            </div>
+        @endforeach
+        <button class="my-btn">load more</button>
+    </div>
+    <div class="index-main-bottom">
+        <ul>
+            <li>
+                <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="">
+                <span>
+                    Digital comics
+                </span>
+            </li>
+            <li>
+                <img src="{{ asset('images/buy-comics-merchandise.png') }}" alt="">
+                <span>
+                    dc merchandising
+                </span></li>
+            <li>
+                <img src="{{ asset('images/buy-comics-subscriptions.png') }}" alt="">
+                    <span>
+                        subscription
+                    </span></li>
+            <li><img src="{{ asset('images/buy-comics-shop-locator.png') }}" alt="">
+                <span>
+                    comic shop locator
+                </span></li>
+            <li>
+                <img src="{{ asset('images/buy-dc-power-visa.svg') }}" alt="">
+                <span>
+                    DC power visa
+                </span>
+            </li>
+
+        </ul>
+    </div>
+</div>
+@endsection
+{{-- @section('footer-content')
+@endsection --}}
+
+
