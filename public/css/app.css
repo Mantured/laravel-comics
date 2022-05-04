@@ -74,10 +74,11 @@ div.comic-card a h4 {
   text-transform: uppercase;
 }
 
-div.index-main a {
-  text-decoration: none;
+div.index-main span,
+div.index-main h4 {
   color: white;
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
 #jumbotron {
@@ -124,10 +125,6 @@ div.index-main-bottom ul li img {
   height: 60px;
   margin-right: 1rem;
   vertical-align: middle;
-}
-
-div.index-main-bottom ul li a {
-  text-transform: uppercase;
 }
 
 div.index-footer-top {

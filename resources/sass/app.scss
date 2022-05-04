@@ -71,10 +71,11 @@ div.comic-card {
     }
 }
 div.index-main {
-    a {
-        text-decoration: none;
+    span,
+    h4 {
         color: white;
         font-size: 1rem;
+        text-transform: uppercase;
     }
 }
 
@@ -118,9 +119,6 @@ div.index-main-bottom {
                 height: 60px;
                 margin-right: 1rem;
                 vertical-align: middle;
-            }
-            a {
-                text-transform: uppercase;
             }
         }
     }
