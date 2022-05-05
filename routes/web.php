@@ -23,16 +23,16 @@ Route::get('/', function () {
 }) -> name ('home');
 
 Route::get('/comics', function () {
-    /* $data = [
+    $data = [
         "comics" => config('comics')
-    ]; */
-    return view('comics');
+    ];
+    return view('guest.comics', $data);
 }) -> name('comics');
 
-Route::get('/{index}', function ($index) {
+Route::get('comics/{index}', function ($index) {
     $data =  config('comics');
     if( is_numeric($index) && $index >= 0 && $index < count($data)){
-        return view('comics-detail' , ["comicsBook"  => $data[$index]]);
+        return view('guest.comics-detail' , ["comicsBook"  => $data[$index]]);
     } else {
         abort(404);
     }
@@ -41,38 +41,38 @@ Route::get('/{index}', function ($index) {
 
 
 Route::get('/characters', function () {
-    return view('characters');
+    return view('guest.characters');
 }) -> name('characters');
 
 Route::get('/movies', function () {
-    return view('movies');
+    return view('guest.movies');
 }) -> name('movies');
 
 Route::get('/games', function () {
-    return view('games');
+    return view('guest.games');
 }) -> name('games');
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    return view('guest.collectibles');
 }) -> name('collectibles');
 
 Route::get('/videos', function () {
-    return view('videos');
+    return view('guest.videos');
 }) -> name('videos');
 
 Route::get('/fans', function () {
-    return view('fans');
+    return view('guest.fans');
 }) -> name('fans');
 
 Route::get('/news', function () {
-    return view('news');
+    return view('guest.news');
 }) -> name('news');
 
 Route::get('/shop', function () {
-    return view('shop');
+    return view('guest.shop');
 }) -> name('shop');
 
 Route::get('/tv', function () {
-    return view('tv');
+    return view('guest.tv');
 }) -> name('tv');
 
