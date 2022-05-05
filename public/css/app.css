@@ -71,10 +71,9 @@ div.comic-card img {
   height: 80%;
   margin-bottom: 1rem;
 }
-div.comic-card a {
+div.comic-card a,
+div.comic-card h4 {
   text-decoration: none;
-}
-div.comic-card a h4 {
   text-transform: uppercase;
   color: white;
 }
