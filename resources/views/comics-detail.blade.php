@@ -30,8 +30,25 @@
         </div>
     </div>
     <div class="comics-book-detail clearfix">
-        <div>talent</div>
-        <div>speces</div>
+        <div class="talent">
+            <h4> Art by:</h4>
+            <p>
+                @foreach ($comicsBook['artists'] as $artist)
+                <span>{{$artist}}</span>,
+                @endforeach
+            </p>
+            <h4>Written by:</h4>
+            <p>
+                @foreach ($comicsBook['writers'] as $writer)
+                <span>{{$writer}}</span>
+                @endforeach
+                @dump($comicsBook)
+                @dump($comicsBook['writers'])
+                @dump($writer)
+        </div>
+        <div class="speces">
+
+        </div>
     </div>
 
 </div>
