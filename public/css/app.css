@@ -186,3 +186,13 @@ div.index-footer-bottom div.social-wrapper a {
   color: rgb(2, 130, 249);
   text-transform: uppercase;
 }
+
+#test-1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#test-1 h1 {
+  text-transform: capitalize;
+  color: blueviolet;
+  background-color: black;
+}
