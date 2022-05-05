@@ -13,7 +13,7 @@
             </ul> --}}
             <ul>
                 <li class="{{ Route::currentRouteName() == 'characters' ? 'active' : ''}}"><a href="{{ @route('characters')}}">characters</a></li>
-                <li class="{{ Route::currentRouteName() == 'comics' ? 'active' : ''}}"><a href="{{ @route('comics')}}">comics</a></li>
+                <li class="{{ Route::currentRouteName() == 'comics' || Route::currentRouteName() == 'comics-detail' ? 'active' : ''}}"><a href="{{ @route('comics')}}">comics</a></li>
                 <li class="{{ Route::currentRouteName() == 'games' ? 'active' : ''}}"><a href="{{ @route('games')}}">games</a></li>
                 <li class="{{ Route::currentRouteName() == 'collectibles' ? 'active' : ''}}"><a href="{{ @route('collectibles')}}">collectibles</a></li>
                 <li class="{{ Route::currentRouteName() == 'videos' ? 'active' : ''}}"><a href="{{ @route('videos')}}">videos</a></li>
