@@ -2,6 +2,13 @@
 @import "partials/_variables.scss";
 
 /* RESET */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -218,23 +225,57 @@ div.index-footer-bottom {
 .comics-book-container {
     width: 100vw;
     height: 90vh;
-    background-color: violet;
     z-index: 3;
     position: relative;
+    background-color: white;
 
     .banner {
         width: 100%;
         height: 10vh;
         background-color: blue;
+        margin-bottom: 5rem;
     }
 
-    .comics-book-detail {
-        width: 60vw;
+    .comics-book-cover {
+        width: 70vw;
         margin: 0 auto;
-        background-color: aliceblue;
+        margin-bottom: 3rem;
         & img:first-child {
-            position: relative;
-            bottom: 330px;
+            position: absolute;
+            bottom: 48rem;
+            /* .adv {
+                width: 40vw;
+                height: 200px;
+            } */
+        }
+        .comics-book-txt {
+            h2 {
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+            .comics-book-info {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem;
+                background-color: green;
+                margin-bottom: 1rem;
+                .comics-book-price {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 75%;
+                }
+            }
+            p {
+                line-height: 30px;
+            }
+        }
+    }
+    .comics-book-detail {
+        width: 70vw;
+        margin: 0 auto;
+        div {
+            float: left;
+            width: 50%;
         }
     }
 }
