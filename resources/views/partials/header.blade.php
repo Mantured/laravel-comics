@@ -1,7 +1,8 @@
 <header>
     <div class="index-header">
         <!-- img -->
-        <img src="{{asset("images/dc-logo.png")}}" alt="Dc Comics Logo">
+
+        <a href="{{ @route('home')}}"><img src="{{asset("images/dc-logo.png")}}" alt="Dc Comics Logo"></a>
         <!-- nav -->
         <nav>
             {{-- <ul>
@@ -11,17 +12,22 @@
                 </li>
             </ul> --}}
             <ul>
-                <li><a href="#">characters</a></li>
-                <li><a href="{{ @route('comics')}}">comics</a></li>
-                <li><a href="#">movies</a></li>
-                <li><a href="#">tv</a></li>
-                <li><a href="#">v</a></li>
-                <li><a href="#">collectibles</a></li>
-                <li><a href="#">videos</a></li>
-                <li><a href="#">fans</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#">shop</a></li>
+                <li class="{{ Route::currentRouteName() == 'characters' ? 'active' : ''}}"><a href="{{ @route('characters')}}">characters</a></li>
+                <li class="{{ Route::currentRouteName() == 'comics' ? 'active' : ''}}"><a href="{{ @route('comics')}}">comics</a></li>
+                <li class="{{ Route::currentRouteName() == 'games' ? 'active' : ''}}"><a href="{{ @route('games')}}">games</a></li>
+                <li class="{{ Route::currentRouteName() == 'collectibles' ? 'active' : ''}}"><a href="{{ @route('collectibles')}}">collectibles</a></li>
+                <li class="{{ Route::currentRouteName() == 'videos' ? 'active' : ''}}"><a href="{{ @route('videos')}}">videos</a></li>
+                <li class="{{ Route::currentRouteName() == 'fans' ? 'active' : ''}}"><a href="{{ @route('fans')}}">fans</a></li>
+                <li class="{{ Route::currentRouteName() == 'news' ? 'active' : ''}}"><a href="{{ @route('news')}}">news</a></li>
+                <li class="{{ Route::currentRouteName() == 'shop' ? 'active' : ''}}"><a href="{{ @route('shop')}}">shop</a></li>
+                <li class="{{ Route::currentRouteName() == 'tv' ? 'active' : ''}}"><a href="{{ @route('tv')}}">tv</a></li>
+                <li class="{{ Route::currentRouteName() == 'movies' ? 'active' : ''}}"><a href="{{ @route('movies')}}">movies</a></li>
             </ul>
         </nav>
+    </div>
+    <div class="index-main">
+        <div id="jumbotron">
+            {{-- <button class="my-btn">Current Series</button> --}}
+        </div>
     </div>
 </header>

@@ -6,12 +6,12 @@
 @endsection --}}
 @section( 'main-content')
 
-<div class="index-main">
+{{-- <div class="index-main">
     <div id="jumbotron">
-        <button class="my-btn">Current Series</button>
-    </div>
+    </div> --}}
 
     <div class="index-main-top">
+        <button class="my-btn">Current Series</button>
         @foreach ( $comics as $comic )
             <div class="comic-card">
                 <img src="{{ $comic['thumb']}}" alt="{{ $comic['title']}}">

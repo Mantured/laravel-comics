@@ -3,53 +3,43 @@
 return [
     [
         "text"=> "characters",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> "characters",
     ],
     [
         "text"=> "comics",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> 'comics',
     ],
     [
         "text"=> "movies",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> "movies",
     ],
     [
         "text"=> "tv",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> "tv",
     ],
     [
         "text"=> "games",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> "games",
     ],
     [
         "text"=> "collectibles",
-        "href"=> "#",
-        "active"=> true,
+        "route-name"=> "collectibles",
     ],
     [
         "text"=> "videos",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> "videos",
     ],
     [
         "text"=> "fans",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> "fans",
     ],
     [
         "text"=> "news",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> "news",
     ],
     [
         "text" => "shop",
-        "href"=> "#",
-        "active"=> false,
+        "route-name"=> "shop",
     ],
 ];
 
