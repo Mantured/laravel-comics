@@ -223,6 +223,7 @@ div.index-footer-bottom {
 /* comics-books-detail */
 .banner {
     height: 10vh;
+    margin-bottom: 3rem;
 }
 .container-top,
 .container-bottom,
@@ -247,49 +248,6 @@ div.index-footer-bottom {
     z-index: 3;
     position: relative;
     background-color: white;
-
-    .comics-book-cover {
-        width: 70vw;
-        margin: 0 auto;
-        margin-bottom: 3rem;
-        & img:first-child {
-            position: absolute;
-            bottom: 92%;
-        }
-        .comics-book-txt {
-            h2 {
-                text-transform: uppercase;
-                margin-bottom: 1rem;
-            }
-            .comics-book-info {
-                display: flex;
-                justify-content: space-between;
-                padding: 1rem;
-                background-color: green;
-                margin-bottom: 1rem;
-                .comics-book-price {
-                    display: flex;
-                    justify-content: space-between;
-                    width: 75%;
-                }
-            }
-            p {
-                line-height: 30px;
-            }
-        }
-    }
-    .comics-book-detail {
-        width: 70vw;
-        margin: 0 auto;
-        height: 26vh;
-        .talent,
-        .speces {
-            float: left;
-            width: 50%;
-            .artists {
-            }
-        }
-    }
 }
 
 .container-fluid {
@@ -315,7 +273,38 @@ div.comics-book-bottom {
                 margin-right: 1rem;
                 vertical-align: middle;
                 /* background-color: rgb(220, 220, 220); */
+                filter: invert(0.3);
+            }
+            span {
+                text-transform: uppercase;
+                color: grey;
             }
         }
     }
+}
+
+.my-bg {
+    background-color: rgb(85, 186, 89);
+}
+
+.my-line-height {
+    line-height: 35px;
+}
+
+.description {
+    line-height: 40px;
+}
+
+.container-bottom {
+    height: 40vh;
+    h3 {
+        padding-bottom: 3rem;
+    }
+    span {
+        color: rgb(17, 175, 224);
+    }
+}
+
+.bg-series {
+    color: rgb(17, 175, 224);
 }

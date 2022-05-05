@@ -216,6 +216,7 @@ div.index-footer-bottom div.social-wrapper a {
 /* comics-books-detail */
 .banner {
   height: 10vh;
+  margin-bottom: 3rem;
 }
 
 .container-top,
@@ -240,44 +241,7 @@ div.index-footer-bottom div.social-wrapper a {
   position: relative;
   background-color: white;
 }
-.comics-book-container .comics-book-cover {
-  width: 70vw;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-.comics-book-container .comics-book-cover img:first-child {
-  position: absolute;
-  bottom: 92%;
-}
-.comics-book-container .comics-book-cover .comics-book-txt h2 {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-.comics-book-container .comics-book-cover .comics-book-txt .comics-book-info {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: green;
-  margin-bottom: 1rem;
-}
-.comics-book-container .comics-book-cover .comics-book-txt .comics-book-info .comics-book-price {
-  display: flex;
-  justify-content: space-between;
-  width: 75%;
-}
-.comics-book-container .comics-book-cover .comics-book-txt p {
-  line-height: 30px;
-}
-.comics-book-container .comics-book-detail {
-  width: 70vw;
-  margin: 0 auto;
-  height: 26vh;
-}
-.comics-book-container .comics-book-detail .talent,
-.comics-book-container .comics-book-detail .speces {
-  float: left;
-  width: 50%;
-}
+
 .container-fluid {
   position: relative;
   z-index: 3;
@@ -302,4 +266,35 @@ div.comics-book-bottom ul li img {
   margin-right: 1rem;
   vertical-align: middle;
   /* background-color: rgb(220, 220, 220); */
+  filter: invert(0.3);
+}
+div.comics-book-bottom ul li span {
+  text-transform: uppercase;
+  color: grey;
+}
+
+.my-bg {
+  background-color: rgb(85, 186, 89);
+}
+
+.my-line-height {
+  line-height: 35px;
+}
+
+.description {
+  line-height: 40px;
+}
+
+.container-bottom {
+  height: 40vh;
+}
+.container-bottom h3 {
+  padding-bottom: 3rem;
+}
+.container-bottom span {
+  color: rgb(17, 175, 224);
+}
+
+.bg-series {
+  color: rgb(17, 175, 224);
 }

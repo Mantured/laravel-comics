@@ -14,28 +14,28 @@
     </div>
 </div>
 <div class="container-fluid">
-    <div class="container-top position-relative">
+    <div class="container-top position-relative mb-3">
         <div class="row">
-            <div class="col-9">
-                <h2> {{$comicsBook['title']}}</h2>
-                <div class="row">
-                    <div class="col-8 d-flex justify-content-between">
-                        <p>U.S. Price {{$comicsBook['price']}}</p>
-                        <p>AVAILABLE</p>
+            <div class="col-9 ">
+                <h2 class="mb-3 text-uppercase"> {{$comicsBook['title']}}</h2>
+                <div class="row mb-3 p-2 my-line-height">
+                    <div class="col-8 d-flex justify-content-between my-bg  p-2">
+                        <p class="mb-0">U.S. Price {{$comicsBook['price']}}</p>
+                        <p class="mb-0">AVAILABLE</p>
                     </div>
-                    <div class="col-4 text-end">
-                        <p>
+                    <div class="col-4 text-end my-bg p-2">
+                        <p class="mb-0">
                             Check Avaiability &#9662;
                         </p>
                     </div>
                 </div>
-                <p>
-                    {{$comicsBook['description']}}
+                <p class="description">
+                        {{$comicsBook['description']}}
                 </p>
 
             </div>
-            <div class="col-3">
-                <p class="text-uppercase text-end"> adv</p>
+            <div class="col-3  text-end">
+                <p class="text-uppercase text-end m-1"> ADVERTISMENT </p>
                 <img  class="img-fluid" src="{{asset("images/adv.jpg")}}" alt="">
             </div>
         </div>
@@ -43,14 +43,14 @@
 </div>
 <div class="container-fluid bg-comics-book">
     <div class="container-bottom">
-        <div class="row">
+        <div class="row gx-5 ">
             <div class="col-6">
-                <h3>
+                <h3 class="border-bottom">
                     Talent
                 </h3>
-                <div class="row">
-                    <div class="col-4">
-                        <h5>Art by :</h5>
+                <div class="row border-bottom ">
+                    <div class="col-4 ">
+                        <h5  >Art by :</h5>
                     </div>
                     <div class="col-8">
                         <p>
@@ -60,7 +60,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row border-bottom ">
                     <div class="col-4">
                         <h5>Written by : </h5>
                     </div>
@@ -74,18 +74,18 @@
                 </div>
             </div>
             <div class="col-6">
-                <h3>
+                <h3 class="border-bottom">
                     Specs
                 </h3>
-                <div class="row">
+                <div class="row border-bottom">
                     <div class="col-4 ">
                         <h5>Series: </h5>
                     </div>
-                    <div class="col-8 text-uppercase">
+                    <div class="col-8 text-uppercase bg-series">
                         <p>{{$comicsBook['series']}}</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row border-bottom">
                     <div class="col-4">
                         <h5>U.S. Price :</h5>
                     </div>
@@ -93,7 +93,7 @@
                         <p>{{$comicsBook['price']}}</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row border-bottom">
                     <div class="col-4">
                         <h5> On Sale Date: </h5>
                     </div>
@@ -105,7 +105,7 @@
             </div>
         </div>
     </div>
-    <div class="container-icons">
+    <div class="container-icons border-top">
         <div class="comics-book-bottom">
             <ul>
                 <li>
