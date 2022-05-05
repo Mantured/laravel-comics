@@ -45,7 +45,7 @@
     <div class="container-bottom">
         <div class="row gx-5 ">
             <div class="col-6">
-                <h3 class="border-bottom">
+                <h3 class="border-bottom pt-3">
                     Talent
                 </h3>
                 <div class="row border-bottom ">
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="col-6">
-                <h3 class="border-bottom">
+                <h3 class="border-bottom pt-3">
                     Specs
                 </h3>
                 <div class="row border-bottom">

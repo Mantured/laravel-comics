@@ -71,7 +71,10 @@ div.comic-card img {
   height: 80%;
   margin-bottom: 1rem;
 }
-div.comic-card h4 {
+div.comic-card a {
+  text-decoration: none;
+}
+div.comic-card a h4 {
   text-transform: uppercase;
   color: white;
 }
@@ -127,6 +130,10 @@ div.index-main-bottom ul li img {
   margin-right: 1rem;
   vertical-align: middle;
 }
+div.index-main-bottom ul li span {
+  text-transform: uppercase;
+  color: white;
+}
 
 div.index-footer-top {
   height: 42vh;
@@ -165,6 +172,7 @@ div.index-footer-top div.nav-wrapper div nav ul {
 }
 div.index-footer-top div.nav-wrapper div nav ul li {
   padding: 0;
+  list-style: none;
 }
 div.index-footer-top img {
   scale: 1.2;

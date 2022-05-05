@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    @include('partials.header')
+    @include('partials.header', ["links" => config("navlinks")])
 
     <main>
         @yield('main-content')
