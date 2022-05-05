@@ -23,18 +23,26 @@ body {
 div.index-header {
   height: 13vh;
   display: flex;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   align-items: center;
   justify-content: space-around;
 }
+div.index-header nav {
+  height: 100%;
+}
 div.index-header nav ul {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 div.index-header nav ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
   padding: 0 0.7rem;
   list-style-type: none;
+  /* border-bottom: 4px solid blue; */
 }
 div.index-header nav ul li a {
   color: black;
@@ -42,10 +50,9 @@ div.index-header nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-div.index-header nav ul li:hover a,
-div.index-header nav ul li:active a,
+div.index-header nav ul li:hover,
+div.index-header nav ul li:active,
 div.index-header nav ul .active {
-  padding-bottom: 5vh;
   border-bottom: 4px solid blue;
 }
 
@@ -53,17 +60,14 @@ div.comic-card {
   width: 16.6666666667%;
   padding: 0.5rem;
 }
-div.comic-card a {
-  text-decoration: none;
-  color: white;
-}
-div.comic-card a img {
+div.comic-card img {
   width: 80%;
   height: 80%;
   margin-bottom: 1rem;
 }
-div.comic-card a h4 {
+div.comic-card h4 {
   text-transform: uppercase;
+  color: white;
 }
 
 div.index-main span,
