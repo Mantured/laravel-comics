@@ -132,6 +132,7 @@ div.index-footer-top div.nav-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 20vw;
 }
 div.index-footer-top div.nav-wrapper div {
   display: flex;
